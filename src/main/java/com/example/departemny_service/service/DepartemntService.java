@@ -10,11 +10,15 @@ public class DepartemntService {
     @Autowired
     private DepartmentRepositry     departmentRepositry;
 
+
+
+  public Departemnt finddepartmentbyid(Long departemtnid) {
+       return departmentRepositry.findByDepartmentId(departemtnid);
+    }
     public Departemnt saveDepartemnt(Departemnt departemnt) {
       return   departmentRepositry.save(departemnt);
     }
 
-    public Departemnt finddepartmentbyid(Long departemtnid) {
-       return departmentRepositry.findByDepartmentId(departemtnid);
-    }
+
+  
 }
