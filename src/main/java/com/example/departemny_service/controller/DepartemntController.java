@@ -21,4 +21,8 @@ public  Departemnt findDepartemnt( @PathVariable("id") Long departemtnid){
      return  departemntService.finddepartmentbyid(departemtnid);
 
 }
+   @GetMapping("/hello")
+    public String hello() {
+        return "Hello";
+    }
 }
